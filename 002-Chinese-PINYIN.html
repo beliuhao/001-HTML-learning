@@ -14,22 +14,32 @@
     HTML中用来显示音标或注释的标记，可用ruby标签
 </p>
 
-<div lang="zh-CN" style="font-size: 150%">
+<p>使用规则如下：</p>
+<ul>
+    <li>&lt;ruby&gt; — 用它将需要注释或注音标的文字内容包围住。</li>
+    <li>&lt;rt&gt; — 这里面放置音标或注释，这个标记要跟在需要注释的文本后边。</li>
+    <li>&lt;rp&gt; — 这个标记是防备那些不支持ruby标记的浏览器，主要用来放置括弧。对于支持这个标记的浏览器，rp标记的CSS样式是{display:none;}，也就是不可见。</li>
+</ul>
 
-    <p>有声调</p>
-    <ruby>
-        &#27721; <rp>(</rp><rt>h&agrave;n</rt><rp>)</rp>
-        &#23383; <rp>(</rp><rt>z&igrave;</rt><rp>)</rp>
-    </ruby>
-    
-    </br>
-    </br>
 
-    <p>无声调</p>
-    <ruby>
-        汉 <rp>(</rp><rt>han</rt><rp>)</rp>
-        字 <rp>(</rp><rt>zi</rt><rp>)</rp>
-    </ruby>
+<div lang="zh-CN" style="font-size: 120%">
+    <p>举例说明：</p>
+    <ol>
+        <li>
+            <p>有声调</p>
+            <ruby>
+                &#27721; <rp>(</rp><rt>h&agrave;n</rt><rp>)</rp>
+                &#23383; <rp>(</rp><rt>z&igrave;</rt><rp>)</rp>
+            </ruby>
+        </li>
+        <li>
+            <p>无声调</p>
+            <ruby>
+                汉 <rp>(</rp><rt>han</rt><rp>)</rp>
+                字 <rp>(</rp><rt>zi</rt><rp>)</rp>
+            </ruby>
+        </li>
+    </ol>
 
 </div>
 
