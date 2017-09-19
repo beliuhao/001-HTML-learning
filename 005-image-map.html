@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            position: relative;
+        }
+        #rect, #circle {
+            position: absolute;
+            top: 37px;;
+        }
+        #rect {
+            width: 50px;
+            height: 50px;
+        }
+        #circle {
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        #rect:hover,
+        #circle:hover {
+            background-color: hsla(337, 73%, 43%, 0.45)
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        HTML Image Map
+    </h1>
+    
+    <!-- src="http://img02.tooopen.com/images/20160509/tooopen_sy_161967094653.jpg" -->
+    <img src="src/imgs/flowerbook-imagemap.jpg" width="240" height="240" 
+        alt="Picture of flowerbook" TITLE="Reading a good book is like smelling some wonderful flowers." 
+        usemap="#flowerbookmap" />
+    
+    <div id="rect"><a href="#"></a></div>
+    <div id="circle"><a href="#"></a></div>
+
+    <map name="flowerbookmap">
+        <area shape="rect" coords="0, 0, 50, 50" alt="rect" title="rectangular area" href="#" />
+        <area shape="circle" coords="150, 50, 50" alt="circle" title="circular area" href="#" />
+    </map>
+    
+</body>
+</html>
