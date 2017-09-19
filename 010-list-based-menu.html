@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List based menu</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #top-menu {
+            background-color: #cce;
+            height: 35px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+        .menu {
+            list-style-type: none;
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        nav ul li a {
+            display: block;
+            float: left;
+            max-height: 25px;
+            width: 100px;
+            padding: 5px 0;
+            font-size: 22px;
+            text-align: center;
+            background-color: #cce;
+            text-decoration: none;
+            color: #600;          
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            background-color: white;
+        }
+        #content {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav id="top-menu">
+        <ul class="menu">
+            <li> <a href="#">One</a> </li>
+            <li> <a href="#">Two</a> </li>
+            <li> <a href="#">Three</a> </li>
+            <li> <a href="#">Four</a> </li>
+            <li> <a href="#">Five</a> </li>
+            <li> <a href="#">Six</a> </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <h1>HTML List-based menu</h1>
+    </div>
+
+</body>
+</html>
