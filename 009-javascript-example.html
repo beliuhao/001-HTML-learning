@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Example</title>
+    <style>
+        div.container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        div.circle {
+            width: 80%;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            border: 3px solid rgba(241, 7, 7, 0.5);
+            border-radius: 50%;
+            position: relative;
+        }
+        span {
+            position: absolute;
+            top: 65px;
+            left: 85px;
+            font-size: 400%;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Javascript Example</h1>
+        <p>Automatic Counting: </p>
+        <div class="circle">
+            <span></span>
+        </div>
+    </div>
+    
+    <script>
+        let count = 0;
+        const span = document.querySelector("span");
+        const spanstyle = span.style;
+
+        function autoCount(){
+
+            switch(count) {
+                case 10:
+                    Object.assign(spanstyle, {left: "75px"});
+                    break;
+                case 100:
+                    Object.assign(spanstyle, {left: "55px"});
+                    break;
+                case 1000:
+                    Object.assign(spanstyle, {left: "35px"});
+                    break;
+                case 10000:
+                    count = 0;                 
+                default:
+                    break;
+            }
+            
+            span.innerHTML = count;
+            count++;
+        }
+        setInterval(autoCount, 100);
+    </script>
+
+</body>
+</html>
