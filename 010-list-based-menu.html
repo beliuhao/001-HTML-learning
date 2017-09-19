@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
         }
+
         #top-menu {
             background-color: #cce;
             height: 35px;
@@ -18,29 +19,36 @@
             position: fixed;
             top: 0;
         }
+
         .menu {
-            list-style-type: none;
-            display: block;
-            width: 80%;
+            /* display: table very important! */
+            display: table;
             margin: 0 auto;
         }
 
-        nav ul li a {
-            display: block;
+        li {
+            list-style: none;
             float: left;
+        }
+
+        a {
+            display: block;
             max-height: 25px;
             width: 100px;
-            padding: 5px 0;
             font-size: 22px;
             text-align: center;
+            margin: 0 auto;
+            padding: 5px 0;
             background-color: #cce;
             text-decoration: none;
             color: #600;          
         }
-        nav ul li a:hover {
+
+        a:hover {
             text-decoration: underline;
             background-color: white;
         }
+
         #content {
             width: 80%;
             margin: 50px auto;
