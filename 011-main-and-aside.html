@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List based menu</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #719BDB;
+        }
+        
+        #header {
+            background-color: rgba(12, 12, 12, 0.75);
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        .menu {
+            /* display: table very important! */
+            display: table;
+            margin: auto;
+        }
+
+        .menu li {
+            list-style: none;
+            float: left;
+        }
+
+        .menu li a {
+            display: block;
+            height: 60px;
+            width: 100px;
+            font-size: 22px;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 15px;
+            text-decoration: none;
+            color: #F8F4F4;
+            box-sizing: border-box;          
+        }
+
+        .menu li a:hover {
+            text-decoration: underline;
+            background-color: #F2F9FA;
+            color: #080000;
+        }
+
+        #content {
+            width: 80%;
+            margin: 80px auto;
+            background-color: #E74919;
+        }
+
+        .main{
+            width: 70%;
+            float: left;
+        }
+        .main h1, .main p {
+            padding: 5px 10px;;
+        }
+        .main img {
+            width: 90%;
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .aside{
+            width: 30%;
+            float: left;
+        }
+        .aside h2, .aside p {
+            padding: 5px 10px;;
+        }
+        .aside img {
+            width: 90%;
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+        }
+        #footer {
+            background-color: rgba(22, 1, 1, 0.69);
+            height: 35px;
+            width: 100%;
+            color: white;
+        }
+        #footer p {
+            margin: 5px auto;
+            padding-top: 5px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav id="header">
+        <ul class="menu">
+            <li> <a href="#">One</a> </li>
+            <li> <a href="#">Two</a> </li>
+            <li> <a href="#">Three</a> </li>
+            <li> <a href="#">Four</a> </li>
+            <li> <a href="#">Five</a> </li>
+            <li> <a href="#">Six</a> </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <div class="main">
+            <h1>main content area</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit numquam, harum, praesentium exercitationem reiciendis officiis asperiores nisi ratione facere odit quisquam recusandae! Mollitia vitae fugit ullam reiciendis assumenda libero totam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda voluptatum sint architecto nobis commodi eaque quae accusantium quas fuga neque nostrum nisi, debitis libero eum vero sed, illum porro! Tempora expedita dolores sunt distinctio reprehenderit adipisci natus porro optio. Consectetur ducimus corrupti provident recusandae molestiae mollitia quod iste, pariatur nihil natus labore consequatur voluptas deserunt officia doloribus impedit quibusdam vel quis repellendus laboriosam tempora qui quia. Id rem esse ea quod sapiente praesentium vel accusantium illum voluptatum vero ducimus repellendus quia doloribus atque in mollitia quasi, harum quam! Quo rerum exercitationem cum pariatur voluptatibus? Error minus optio et sapiente.</p>
+            <img src="src/imgs/book-img/flowerbook-imagemap.jpg" alt="flowerbook pic">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio praesentium architecto aliquam non quia expedita quidem mollitia eos dolores unde qui voluptatibus dignissimos eius consectetur obcaecati exercitationem, eligendi accusantium! Perspiciatis libero nobis asperiores consectetur pariatur eius maxime voluptatum aliquid impedit tempore dolorem vitae optio id dolores ab non enim, odio et atque. Sapiente unde praesentium doloremque distinctio cupiditate aliquam id possimus aspernatur eos, doloribus magnam a fugiat omnis perspiciatis porro iste, amet facilis molestiae minus nam ad mollitia asperiores rerum ratione. Veritatis est nemo sapiente fugit dolor similique adipisci obcaecati at praesentium quaerat laudantium numquam repellat deserunt, voluptatum facilis, ipsa amet quibusdam, ducimus tempore tempora sit illo rem eligendi pariatur? Eum dolor officia a eaque neque sapiente maiores perferendis commodi aliquid illum adipisci esse magnam dicta cupiditate eos tenetur doloremque, tempora inventore, earum nihil ipsa dolore rem at ea! Mollitia minima facilis tempora necessitatibus id minus eaque beatae perferendis doloremque. Maiores magnam officia non id quos ad, debitis qui labore impedit! Expedita eos ipsa consequatur maxime exercitationem voluptatibus aut. Ipsum, itaque! Iste aut autem repudiandae dignissimos, adipisci exercitationem facilis quam saepe, reiciendis, corrupti optio qui ad aperiam laudantium temporibus consectetur minima ratione doloribus provident ducimus. Maiores, est iure! Delectus quisquam, iste officiis numquam enim commodi deleniti cum possimus quam beatae corporis incidunt, nam error obcaecati nostrum inventore magni saepe doloribus placeat libero animi ullam. At nesciunt cum a qui consequatur est, odit impedit molestiae molestias fugit quasi, minima, illo numquam similique et sed non ipsam optio necessitatibus dolor laboriosam quos perferendis? Explicabo amet enim molestias eaque. Quo veritatis molestias, beatae, ab consequuntur dicta voluptatum, suscipit unde nisi incidunt accusamus? Possimus reprehenderit dignissimos tempore id consectetur a sit illum, consequatur quod veniam distinctio nemo officia necessitatibus suscipit ducimus facilis eaque tenetur minima doloremque culpa eligendi placeat aliquid quibusdam. Ex corporis eaque vel officia soluta, impedit tempore expedita voluptate ducimus eos, corrupti temporibus dolor tenetur autem alias odio ad doloremque? Ut eligendi hic dicta ipsa animi ea neque? Repellat laborum neque autem earum modi! Consequatur aliquid non deleniti nulla magni cupiditate eos exercitationem optio, ab numquam, doloremque culpa magnam nam? Asperiores nulla mollitia optio delectus aperiam qui provident deserunt quaerat rerum quo tempore tempora minus, eligendi aut quos enim fuga! Delectus autem quam aperiam culpa reprehenderit beatae sed consequatur neque eos amet alias officiis quisquam ducimus molestias similique nulla ad repellat quae dolores animi ipsa, debitis qui! Officia, veniam? Provident, quo laborum!</p>
+        </div>
+        <div class="aside">
+            <h2>aside content area 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nulla minima delectus, repudiandae a blanditiis earum illum iusto! Optio consectetur tenetur, maiores deleniti sit libero voluptatibus autem dolorem porro aperiam?</p>
+            <img src="src/imgs/book-img/book-01.jpg" alt="book-01">
+            <h2>aside content area 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatem dolor dolores atque vitae unde porro aliquam fuga harum adipisci cumque consectetur assumenda nostrum perspiciatis quasi facilis repellendus, magnam ad praesentium quis quod iste, modi tenetur. Atque earum amet praesentium explicabo fuga omnis! Provident pariatur nesciunt vitae animi excepturi aliquid.</p>
+            <img src="src/imgs/book-img/book-02.jpg" alt="book-02">
+            <h2>aside content area 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam, rerum porro reiciendis corporis quasi repellat dignissimos dolorem exercitationem debitis modi a molestiae soluta dolor iusto at magni temporibus eos!</p>
+            <img src="src/imgs/book-img/book-03.png" alt="book-03">
+        </div>
+    </div>
+
+    <div style="clear:both;"></div>
+
+    <div id="footer">
+        <p>Copyright © 2017 Designed by Herman.</p>
+    </div>
+
+</body>
+</html>
