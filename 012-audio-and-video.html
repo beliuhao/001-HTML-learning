@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio and Video in HTML5</title>
+</head>
+<body>
+
+    <h1>HTML5 Audio</h1>
+    <p> Here's a song: </p>
+    <audio id="audio1" controls>
+        <source src="src/media/song.m4a" type="audio/x-aac" />
+        <source src="src/media/song.mp3" type="audio/mpeg" />
+        <source src="src/media/song.ogg" type="audio/ogg" />
+        <p> Your browser does not support the HTML5 audio feature. </p>
+    </audio>
+    
+    <form>
+        <input type="button" value="audioPlay" onclick="audioPlay()" />
+        <input type="button" value="audioPause" onclick="audioPause()" />
+        <input type="button" value="audioRewind" onclick="audioRewind()" />
+    </form>
+
+    <h1>HTML5 Video</h1>
+    <p> Here's a video: </p>
+    <video id="video1" width="600" height="400" controls>
+        <source src="src/media/video.m4v" type="video/mp4" />
+        <source src="src/media/video.webm" type="video/webm" />
+        <source src="src/media/video.ogg" type="video/ogg" />
+        <p> Your browser does not support the HTML5 video feature. </p>
+    </video>
+    
+    <form>
+        <input type="button" value="videoPlay" onclick="videoPlay()" />
+        <input type="button" value="videoPause" onclick="videoPause()" />
+        <input type="button" value="videoRewind" onclick="videoRewind()" />
+    </form>
+
+    <script>
+        const audio = document.getElementById('audio1');
+        function audioPlay() { audio.play(); }
+        function audioPause() { audio.pause(); }
+        function audioRewind() { audio.currentTime = 0; }
+
+        const video = document.getElementById('video1');
+        function videoPlay() { video.play(); }
+        function videoPause() { video.pause(); }
+        function videoRewind() { video.currentTime = 0; }
+    </script>
+</body>
+</html>
