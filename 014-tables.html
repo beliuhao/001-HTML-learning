@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+    <style>
+        table { 
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid purple;
+        }
+        th, td { 
+            padding: 0 3px;
+        }
+        tfoot td {
+            background-color: #eee;
+            text-align: center;
+            font-size: 75%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Tables</h1>
+    
+    <table>
+        
+        <caption>
+            Some Favorite Albums
+        </caption>
+
+        <!-- thead and tfoot 代码放置的位置不影响其呈现的位置-->
+        <thead>
+            <tr>
+                <th> Title </th>
+                <th> Artist </th>
+                <th> Comment </th>
+            </tr>
+        </thead>
+    
+        <tfoot>
+            <tr>
+                <td> Column 1 </td>
+                <td> Column 2 </td>
+                <td> Column 3 </td>
+            </tr>
+        </tfoot>
+    
+        <tbody>
+            <tr>
+                <td> Electric Ladyland </td>
+                <td> Jimi Hendrix </td>
+                <td> Revolutionary </td>
+            </tr>
+        
+            <tr>
+                <td> Revolver </td>
+                <td> The Beatles </td>
+                <td> Their best work. </td>
+            </tr>
+        
+            <tr>
+                <td> Apostrophe </td>
+                <td> Frank Zappa </td>
+                <td> Brilliant mix of rock and jazz. </td>
+            </tr>
+        
+            <tr>
+                <td> Birds of Fire </td>
+                <td> Mahavishnu Orchestra </td>
+                <td> The ultimate fusion album. </td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
