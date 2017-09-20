@@ -62,16 +62,34 @@
         setInterval(updateProgress1, 50);
 
         let p2Value = 0;
+        let handle1;
+        let handle2;
         const progress2Bar = document.getElementById('p2');
         const span2Value = document.getElementById('s2');
 
         function updateProgress2() {
             p2Value += 1;
-            if(p2Value > 80) clearInterval(handle2);
+            if(p2Value > 80){
+                clearInterval(handle1);
+                handle1 = 0;
+                handle2 = setInterval(withdrawProgress, 50)
+            }
             progress2Bar.value = p2Value;
             span2Value.textContent = p2Value;
         }
-        const handle2 = setInterval(updateProgress2, 50);
+
+        function withdrawProgress() {
+            p2Value -= 1;
+            if(p2Value === 0){
+                clearInterval(handle2);
+                handle2 = 0;
+                handle1 = setInterval(updateProgress2, 50);
+            }
+            progress2Bar.value = p2Value;
+            span2Value.textContent = p2Value;
+        }
+
+        handle1 = setInterval(updateProgress2, 50);
     </script>
 </body>
 </html>
