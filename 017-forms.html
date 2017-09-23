@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Demo</title>
+</head>
+<body>
+    <!-- formal form -->
+    <p>Login<p>
+    <!-- <form action="https://www.baidu.com" method="POST">
+        <label>
+            Username:
+            <input type="text" name="username" placeholder="username">            
+        </label>
+        <label>
+            Password:
+            <input type="password" name="password" placeholder="password">
+        </label>
+
+        <input type="submit">
+    </form> -->
+
+    <form action="#" method="POST">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="username" required>        
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="password" required>
+        </div>
+               
+        <input type="submit">
+    </form>
+    <p>********************************</p>
+    <!-- radio, select and textarea-->
+    <form> <!-- Default method is GET -->
+        <p>Do you prefer dogs or cats ?</p>
+        <label for="dogs">Dogs: </label>
+        <input type="radio" id="dogs" name="petChoice" value="DOGS">
+        <label for="cats">Cats: </label>
+        <input type="radio" id="cats" name="petChoice" value="CATS">
+
+        <p>What's your favorite color ?</p>
+        <select name="color" id="">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+
+        <div>
+            <p>Text Area: </p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        
+        <input type="submit">
+    </form>
+    <p>********************************</p>
+    <!-- Register form demo -->
+    <p style="font-size:150%; font-weight:bold">Register Demo</p>
+    <form action="#" method="POST">
+        <div>
+            <div>
+                <label for="firstName">Frist Name: </label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+        </div>
+        
+        <div>
+            <label for="male">Male: </label>
+            <input type="radio" id="male" name="sex" value="MALE">
+            <label for="female">Female: </label>
+            <input type="radio" id="female" name="sex" value="FEMALE">
+            <label for="other">Other: </label>
+            <input type="radio" id="other" name="sex" value="OTHER">
+        </div>
+        
+        <div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required pattern=".{3,}" title="3 characters minimum">
+            </div>
+            <!-- password length validation: pattern title -->
+            <!-- <input pattern=".{5,10}" required title="5 to 10 characters"> -->
+        </div>
+        
+        <div>
+            <label>
+                Birthday:
+                <select name="month">
+                    <option>Month</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                </select>
+                <select name="day">
+                    <option>Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <select name="year">
+                    <option>Year</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label for="agreement">I agree to the terms and conditions: </label>
+            <input type="checkbox" id="agreement">
+        </div>
+        
+
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
