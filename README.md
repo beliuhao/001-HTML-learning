@@ -31,7 +31,7 @@ $ git config --global user.name "username"
 $ git config --global user.email "useremail"
 ```
 
-add sth else for testing
+add sth else for testing2
 
 3.VS Code push issue:
 
